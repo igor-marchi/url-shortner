@@ -1,0 +1,13 @@
+@baseUrl = http://localhost:8080
+@urlId = hJ3Ebzr5F
+
+### Shorten URL
+POST {{baseUrl}}/shorten-url
+Content-Type: application/json
+
+{
+    "url": "https://github.com/igor-marchi/ibge-cities"
+}
+
+### Get full URL
+GET {{baseUrl}}/{{urlId}}
